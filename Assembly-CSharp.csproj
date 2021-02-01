@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
     <Compile Include="Assets\NetworkManager.cs" />
     <Compile Include="Assets\NetworkManagerLobby.cs" />
     <Compile Include="Assets\NetworkPlayer.cs" />
@@ -760,6 +761,24 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/nikolas.haag/VR/Multiplayer with same settings/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>/Users/nikolas.haag/VR/Multiplayer with same settings/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>/Users/nikolas.haag/VR/Multiplayer with same settings/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>/Users/nikolas.haag/VR/Multiplayer with same settings/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>/Users/nikolas.haag/VR/Multiplayer with same settings/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids.Editor">
+      <HintPath>/Users/nikolas.haag/VR/Multiplayer with same settings/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>/Users/nikolas.haag/VR/Multiplayer with same settings/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
