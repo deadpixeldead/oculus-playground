@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
+    <Compile Include="Assets\ContinousMovement.cs" />
     <Compile Include="Assets\NetworkManager.cs" />
     <Compile Include="Assets\NetworkManagerLobby.cs" />
     <Compile Include="Assets\NetworkPlayer.cs" />
