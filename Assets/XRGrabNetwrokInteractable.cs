@@ -19,9 +19,10 @@ public class XRGrabNetwrokInteractable : XRGrabInteractable
         
     }
 
-    protected override void OnSelectEnter(XRBaseInteractor interactor)
+    [System.Obsolete]
+    protected override void OnSelectEntering(XRBaseInteractor interactor)
     {
         photonView.RequestOwnership();
-        base.OnSelectEnter(interactor);
+        base.OnSelectEntering(interactor);
     }
 }

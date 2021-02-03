@@ -6,14 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/Prefabs/Props/Scenes/Lobby.unity
+    path: Assets/Scenes/Lobby.unity
     guid: 194c7fd7cf13241478b0fc1f8969d641
   - enabled: 1
-    path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/Prefabs/Props/Scenes/Scene
-      Type 1.unity
+    path: Assets/Scenes/Scene Type 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/Prefabs/Props/Scenes/Scene
-      Type 2.unity
+    path: Assets/Scenes/Scene Type 2.unity
     guid: ded6e283f70d94c78bf4ae6f93f46de3
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 290dff766eb884576a81b030b233fcf5,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7c1d4afe963204a66b7acd762a36d982,
+      type: 2}

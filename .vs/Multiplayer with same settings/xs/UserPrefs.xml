@@ -1,18 +1,26 @@
 ﻿<Properties StartupConfiguration="{10580721-AD6C-ECFF-75F5-5E745286962B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ContinousMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.2/Runtime/Interaction/XRInteractionManager.cs">
     <Files>
       <File FileName="Assets/Scripts/HandPresence.cs" Line="73" Column="1" />
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Code/Views/PhotonAnimatorView.cs" />
-      <File FileName="Assets/XRGrabNetwrokInteractable.cs" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Code/Views/PhotonAnimatorView.cs" Line="1" Column="1" />
+      <File FileName="Assets/XRGrabNetwrokInteractable.cs" Line="29" Column="1" />
       <File FileName="Assets/NetworkManager.cs" />
-      <File FileName="Assets/NetworkManagerLobby.cs" Line="1" Column="1" />
-      <File FileName="Assets/ContinousMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/NetworkManagerLobby.cs" />
+      <File FileName="Assets/ContinousMovement.cs" />
+      <File FileName="Assets/NetworkPlayer.cs" />
+      <File FileName="Library/PackageCache/com.unity.xr.oculus@1.6.1/Editor/OculusBuildProcessor.cs" Line="183" Column="1" />
+      <File FileName="Library/PackageCache/com.unity.xr.interaction.toolkit@1.0.0-pre.2/Runtime/Interaction/XRInteractionManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Multiplayer with same settings" expanded="True">
-            <Node name="Assets" expanded="True" selected="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="AssetStoreOriginals" expanded="True" />
+              <Node name="Scripts" expanded="True" />
+              <Node name="TextMesh Pro" expanded="True" />
+              <Node name="XRGrabNetwrokInteractable.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -20,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ba52941a-df2e-4674-b049-2e678ea8fe2d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1f9c6fa8-1a49-4d89-8e2a-b8e37f38d306" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

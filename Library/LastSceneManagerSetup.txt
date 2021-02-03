@@ -1,6 +1,5 @@
 sceneSetups:
-- path: Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/SciFi_Industrial/Prefabs/Props/Scenes/Scene
-    Type 2.unity
+- path: Assets/Scenes/Scene Type 2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
