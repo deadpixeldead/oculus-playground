@@ -67,7 +67,9 @@ public class NetworkPlayer : MonoBehaviour
     {
         if (photonView.IsMine)
         {
-            MapPosition(head, headRig);
+
+            // Ova animacija glave kvari kontrole
+            //MapPosition(head, headRig);
             MapPosition(lefthand, leftHandRig);
             MapPosition(righthand, rightHandRig);
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand), leftHandAnimator);
