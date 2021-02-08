@@ -90,7 +90,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateMachineInspector
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -4001,4 +4000,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Scene Type 1.unity
   - Assets/Scenes/Scene Type 2.unity
   - Assets/Scenes/Scene Type 3.unity
-  playerPath: /Users/nikolas.haag/VR/oculus-playground-test-default-settings/distanceGrab12.apk
+  playerPath: /Users/nikolas.haag/VR/oculus-playground-test-default-settings/distanceGrab14.apk
