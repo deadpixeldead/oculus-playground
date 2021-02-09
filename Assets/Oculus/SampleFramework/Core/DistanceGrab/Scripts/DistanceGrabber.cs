@@ -23,7 +23,7 @@ namespace OculusSampleFramework
     /// Allows grabbing and throwing of objects with the DistanceGrabbable component on them.
     /// </summary>
     [RequireComponent(typeof(Rigidbody))]
-    public class DistanceGrabber : OVRGrabber
+    ` : OVRGrabber
     {
         // Radius of sphere used in spherecast from hand along forward ray to find target object.
         [SerializeField]
