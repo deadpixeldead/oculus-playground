@@ -270,6 +270,9 @@
     <Reference Include="websocket-sharp">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>

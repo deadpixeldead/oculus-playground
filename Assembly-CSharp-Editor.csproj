@@ -78,12 +78,6 @@
     <Compile Include="Assets\Oculus\LipSync\Editor\OVRLipSyncContextMorphTargetEditor.cs" />
     <Compile Include="Assets\Oculus\LipSync\Editor\OVRLipSyncTool.cs" />
     <Compile Include="Assets\Oculus\LipSync\Editor\OVRNamedArrayPropertyDrawer.cs" />
-    <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\Editor\TeleportTransitionWarpInspector.cs" />
-    <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\AndroidVideoEditorUtil.cs" />
-    <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\MediaPlayerImageEditor.cs" />
-    <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
-    <Compile Include="Assets\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
-    <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Editor\OVROverlayCanvasEditor.cs" />
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPAudioPluginUpdater.cs" />
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPAudioPluginUpdaterStub.cs" />
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPAudioSourceEditor.cs" />
@@ -297,6 +291,9 @@
     </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/PackageCache/com.unity.burst@1.1.1/Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -673,6 +670,9 @@
     <Reference Include="Unity.XR.Interaction.Toolkit">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProGrids">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
@@ -684,6 +684,9 @@
     </Reference>
     <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Editor">
+      <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
@@ -706,6 +709,9 @@
     <Reference Include="Unity.XR.Oculus.Editor">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.Animation.Rigging.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -724,6 +730,12 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging.Editor">
+      <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.Animation.Rigging.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
@@ -732,6 +744,9 @@
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/nikolas.haag/VR/oculus-playground-test-default-settings/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
