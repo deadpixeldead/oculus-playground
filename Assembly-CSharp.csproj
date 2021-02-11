@@ -229,6 +229,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\VRAnimatorController.cs" />
+    <Compile Include="Assets\VRFootIK.cs" />
     <Compile Include="Assets\VRRig.cs" />
     <Compile Include="Assets\XRGrabNetwrokInteractable.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -34,8 +34,7 @@ public class VRRig : MonoBehaviour
         headBodyOffset = transform.position - headConstraint.position;
     }
 
-    // TODO: Maybe use LateUpdate instead
-    void Update()
+    void FixedUpdate()
     {
         transform.position = headConstraint.position + headBodyOffset;
         transform.forward = Vector3.Lerp(
