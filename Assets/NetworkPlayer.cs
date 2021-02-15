@@ -10,15 +10,31 @@ public class NetworkPlayer : MonoBehaviour
     public Transform head;
     public Transform lefthand;
     public Transform righthand;
+    public Transform body;
+    // this is the reference to the robot hands within the bone structure
+    public Transform characterLeftHand;
+    public Vector3 trackingPositionOffsetLeftHand;
+    public Vector3 trackingRotationOffsetLeftHand;
+    public Transform characterRightHand;
+    public Vector3 trackingPositionOffsetRightHand;
+    public Vector3 trackingRotationOffsetRightHand;
 
+
+
+    // Samo potrebno za plave ruke
     public Animator leftHandAnimator;
     public Animator rightHandAnimator;
-
     private PhotonView photonView;
+
+    //private Transform leftRobotHand;
+
 
     private Transform headRig;
     private Transform leftHandRig;
     private Transform rightHandRig;
+    private Transform bodyRig;
+    private Transform leftRobotHandRig;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +44,8 @@ public class NetworkPlayer : MonoBehaviour
         headRig = rig.transform.Find("Camera Offset/Main Camera");
         leftHandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
         rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
-
+        bodyRig = GameObject.Find("Robot Kyle").transform;
+        //leftRobotHand = GameObject.Find("Left Arm IK").transform.GetChild(0).transform;
         if (photonView.IsMine)
         {
             foreach (var item in GetComponentsInChildren<Renderer>())
@@ -70,8 +87,18 @@ public class NetworkPlayer : MonoBehaviour
 
             // Ova animacija glave kvari kontrole
             //MapPosition(head, headRig);
-            MapPosition(lefthand, leftHandRig);
-            MapPosition(righthand, rightHandRig);
+
+            // Ovo treba samo za animaciju plavih ruku
+            //MapPosition(lefthand, leftHandRig);
+            //MapPosition(righthand, rightHandRig);
+
+            // Update Kyle position
+            MapPosition(body, bodyRig);
+            MapPositionWithOffset(characterLeftHand, leftHandRig, trackingPositionOffsetLeftHand, trackingRotationOffsetLeftHand);
+            MapPositionWithOffset(characterRightHand, rightHandRig, trackingPositionOffsetRightHand, trackingRotationOffsetRightHand);
+
+
+
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand), leftHandAnimator);
             UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), rightHandAnimator);
 
@@ -83,5 +110,12 @@ public class NetworkPlayer : MonoBehaviour
     {
         target.position = rigTransform.position;
         target.rotation = rigTransform.rotation;
+    }
+
+    void MapPositionWithOffset(Transform target, Transform rigTransform, Vector3 trackingPositionOffset, Vector3 trackingRotationOffset)
+    {
+
+        target.position = rigTransform.TransformPoint(trackingPositionOffset);
+        target.rotation = rigTransform.rotation * Quaternion.Euler(trackingRotationOffset);
     }
 }
