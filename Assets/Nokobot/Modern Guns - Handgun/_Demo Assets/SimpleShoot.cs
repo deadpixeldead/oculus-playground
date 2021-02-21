@@ -1,14 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon;
+using Photon.Pun;
 
 [AddComponentMenu("Nokobot/Modern Guns/Simple Shoot")]
-public class SimpleShoot : MonoBehaviour
+public class SimpleShoot : MonoBehaviourPun
 {
     [Header("Prefab Refrences")]
     public GameObject bulletPrefab;
     public GameObject casingPrefab;
     public GameObject muzzleFlashPrefab;
+    public GameObject parent;
+    public GameObject child;
+
 
     [Header("Location Refrences")]
     [SerializeField] private Animator gunAnimator;
@@ -23,25 +28,34 @@ public class SimpleShoot : MonoBehaviour
     public AudioSource source;
     public AudioClip fireSound;
 
+    private Animator gunAnimatorFromChild;
+
     void Start()
     {
         if (barrelLocation == null)
             barrelLocation = transform;
 
-        if (gunAnimator == null)
-            gunAnimator = GetComponentInChildren<Animator>();
+        gunAnimatorFromChild = child.GetComponent<Animator>();
     }
 
     public void PullTheTrigger()
     {
-        gunAnimator.SetTrigger("Fire");
+        gunAnimatorFromChild.SetTrigger("Fire");
+        Shoot();
     }
 
-
-    //This function creates the bullet behavior
     void Shoot()
     {
-
+        PhotonView photonView = PhotonView.Get(parent);
+        if (photonView.IsMine)
+        {
+            photonView.RPC("RPCShoot", RpcTarget.All);
+        }
+    }
+    //This function creates the bullet behavior
+    [PunRPC]
+    void RPCShoot()
+    {
         source.PlayOneShot(fireSound);
         if (muzzleFlashPrefab)
         {

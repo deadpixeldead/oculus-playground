@@ -98,9 +98,9 @@ public class NetworkPlayer : MonoBehaviour
             MapPositionWithOffset(characterRightHand, rightHandRig, trackingPositionOffsetRightHand, trackingRotationOffsetRightHand);
 
 
-
-            UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand), leftHandAnimator);
-            UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), rightHandAnimator);
+            // Unly needed for animating the "blue hands"
+            //UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.LeftHand), leftHandAnimator);
+            //UpdateHandAnimation(InputDevices.GetDeviceAtXRNode(XRNode.RightHand), rightHandAnimator);
 
         }
 
