@@ -118,4 +118,9 @@ public class NetworkPlayer : MonoBehaviour
         target.position = rigTransform.TransformPoint(trackingPositionOffset);
         target.rotation = rigTransform.rotation * Quaternion.Euler(trackingRotationOffset);
     }
+
+    public void Damage()
+    {
+        Debug.Log("Damage 10!!!!!");
+    }
 }
