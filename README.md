@@ -3,9 +3,12 @@ Tasks:
 - [x] Multiplayer
 - [x] Add Body
 - [x] Body movement
-- [] Move body on the network
-- [] Body damage
-- [] Remove blue hands + Hand animation
+- [x] Move body on the network
+- [x] Body damage
+- [x] Remove blue hands + Hand animation
+- [x] Respawning
+- [ ] UI for messages
+
 
 Bugs:
 - [] Body shaking while moving

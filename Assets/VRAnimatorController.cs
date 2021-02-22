@@ -14,9 +14,9 @@ public class VRAnimatorController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
-        vrRig = GetComponent<VRRig>();
-        previousPos = vrRig.head.vrTarget.position;
+        //animator = GetComponent<Animator>();
+        //vrRig = GetComponent<VRRig>();
+        //previousPos = vrRig.head.vrTarget.position;
     }
 
     // Update is called once per frame

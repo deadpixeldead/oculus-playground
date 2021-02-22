@@ -34,11 +34,13 @@ public class NetworkPlayer : MonoBehaviour
     private Transform rightHandRig;
     private Transform bodyRig;
     private Transform leftRobotHandRig;
+    private int health;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        health = 100;
         photonView = GetComponent<PhotonView>();
         XRRig rig = FindObjectOfType<XRRig>();
         headRig = rig.transform.Find("Camera Offset/Main Camera");
@@ -122,5 +124,29 @@ public class NetworkPlayer : MonoBehaviour
     public void Damage()
     {
         Debug.Log("Damage 10!!!!!");
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+
+        if (col.gameObject.tag == "Bullet")
+        {
+            if (!photonView.IsMine)
+            {
+                return;
+            }
+            health = health - 10;
+            Debug.Log("I am hit "+ health);
+
+            if (health <= 0)
+            {
+                Debug.Log("I died");
+                NetworkPlayerSpawner nm = GameObject.FindObjectOfType<NetworkPlayerSpawner>();
+                nm.standbyCamera.SetActive(true);
+                nm.respawnTimer = 3f;
+
+                PhotonNetwork.Destroy(gameObject);
+            }
+        }
     }
 }
