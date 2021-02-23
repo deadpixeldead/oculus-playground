@@ -18,17 +18,22 @@ public class BulletManager : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-        Debug.Log("Bullet Trigger: " + col.gameObject.name);
-        //Debug.Log("OnTriggerEnter " + col.gameObject.tag);
+        //Debug.Log("Bullet Trigger: " + col.gameObject.name);
+        ////Debug.Log("OnTriggerEnter " + col.gameObject.tag);
 
-        //all projectile colliding game objects should be tagged "Enemy" or whatever in inspector but that tag must be reflected in the below if conditional
-        if (col.gameObject.tag == "Enemy")
-        {
-            //Destroy(col.gameObject);
-            //add an explosion or something
-            //destroy the projectile that just caused the trigger collision
-            //Destroy(gameObject);
-        }
+        ////all projectile colliding game objects should be tagged "Enemy" or whatever in inspector but that tag must be reflected in the below if conditional
+        //if (col.gameObject.tag == "Enemy")
+        //{
+        //    Debug.Log("Enemy hit");
+        //    col.gameObject.HealthSystem.Damage();
+        //    Debug.Log("Enemy hit after call");
+
+
+        //    //Destroy(col.gameObject);
+        //    //add an explosion or something
+        //    //destroy the projectile that just caused the trigger collision
+        //    //Destroy(gameObject);
+        //}
     }
     //void OnCollisionEnter(Collision collision)
     //{

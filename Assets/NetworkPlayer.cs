@@ -121,10 +121,6 @@ public class NetworkPlayer : MonoBehaviour
         target.rotation = rigTransform.rotation * Quaternion.Euler(trackingRotationOffset);
     }
 
-    public void Damage()
-    {
-        Debug.Log("Damage 10!!!!!");
-    }
 
     void OnTriggerEnter(Collider col)
     {
@@ -142,7 +138,7 @@ public class NetworkPlayer : MonoBehaviour
             {
                 Debug.Log("I died");
                 NetworkPlayerSpawner nm = GameObject.FindObjectOfType<NetworkPlayerSpawner>();
-                nm.standbyCamera.SetActive(true);
+                nm.MoveToStandby();
                 nm.respawnTimer = 3f;
 
                 PhotonNetwork.Destroy(gameObject);

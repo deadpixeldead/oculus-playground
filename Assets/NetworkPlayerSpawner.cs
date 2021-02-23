@@ -40,7 +40,6 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
 
     public void SpawnPlayer()
     {
-        //AddChatMessage("Spawning player: " + playerName);
         int spawnPicker = Random.Range(0, spawnPoints.Length);
         XRRig rig = FindObjectOfType<XRRig>();
         rig.transform.position = spawnPoints[spawnPicker].transform.position;
@@ -48,47 +47,18 @@ public class NetworkPlayerSpawner : MonoBehaviourPunCallbacks
 
         spawnedPlayerPrefab = PhotonNetwork.Instantiate("NetworkPlayer", spawnPoints[spawnPicker].transform.position, spawnPoints[spawnPicker].transform.rotation, 0);
 
-        standbyCamera.SetActive(false);
+        standbyCamera.gameObject.SetActive(false);
         Debug.Log(playerCamera);
         Debug.Log(playerCamera.gameObject);
 
         playerCamera.gameObject.SetActive(true);
     }
 
-    //public void AddChatMessage(string m)
-    //{
-    //    GetComponent<PhotonView>().RPC("AddChatMessage_RPC", RpcTarget.All, m);
-    //}
-
-    //[PunRPC]
-    //void AddChatMessage_RPC(string m)
-    //{
-    //    while (chatMessages.Count >= maxChatMessages)
-    //    {
-    //        chatMessages.RemoveAt(0);
-    //    }
-    //    chatMessages.Add(m);
-    //}
-
-    //void OnGUI()
-    //{
-    //    if (PhotonNetwork.IsConnected)
-    //    {
-    //        GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
-    //        GUILayout.BeginVertical();
-    //        GUILayout.FlexibleSpace();
-
-    //        foreach (string msg in chatMessages)
-    //        {
-    //            GUILayout.Label(msg);
-    //        }
-
-    //        GUILayout.EndVertical();
-    //        GUILayout.EndArea();
-
-    //    }
-
-    //}
+    public void MoveToStandby()
+    {
+        standbyCamera.gameObject.SetActive(true);
+        playerCamera.gameObject.SetActive(true);
+    }
 
     void Update()
     {
