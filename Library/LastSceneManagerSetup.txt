@@ -1,5 +1,9 @@
 sceneSetups:
-- path: Assets/Scenes/Scene Type 2.unity
+- path: Assets/Scenes/Scene Type 1.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
+- path: Assets/F3_Corvette/F3_Corvette.unity
+  isLoaded: 1
+  isActive: 0
   isSubScene: 0
